@@ -30,4 +30,11 @@ class TrendUtilsTests {
     assert 0 == TrendUtils.findTrend(tempList)
   }
 
+  @Test
+  void shouldReturnOnePointZeroForZeroZeroOne() {
+    def tempList = [0, 0, 1]
+
+    assert 1.0 == TrendUtils.findTrend(tempList)
+  }
+
 }
