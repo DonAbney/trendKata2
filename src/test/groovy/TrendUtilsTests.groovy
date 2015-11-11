@@ -23,4 +23,11 @@ class TrendUtilsTests {
     assert 0 == TrendUtils.findTrend(tempList)
   }
 
+  @Test
+  void shouldReturnZeroForOneMatchingPair() {
+    def tempList = [1, 1]
+
+    assert 0 == TrendUtils.findTrend(tempList)
+  }
+
 }
